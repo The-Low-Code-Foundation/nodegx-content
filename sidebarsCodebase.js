@@ -1,10 +1,52 @@
 module.exports = {
   codebaseSidebar: [
+    'overview',
     {
-      type: 'doc',
-      id: 'overview',
-      label: 'Overview',
+      type: 'category',
+      label: 'Getting Started',
+      items: [
+        'development-setup',
+        'contributing',
+        'build-test',
+      ],
     },
-    // Add more docs here
+    {
+      type: 'category',
+      label: 'Architecture',
+      items: [
+        'architecture/overview',
+        'architecture/core-concepts',
+        'architecture/data-flow',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Codebase Structure',
+      items: [
+        'structure/folders',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Nodes',
+      items: [
+        'nodes/overview',
+        'nodes/definition',
+        'nodes/instance',
+        'nodes/scope',
+        'nodes/context',
+        'nodes/dynamic-ports',
+        'nodes/visual-states',
+        'nodes/variants',
+        'nodes/frontend-nodes',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Development Guides',
+      items: [
+        'guides/adding-nodes',
+      ],
+    },
   ],
 };
