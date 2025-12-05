@@ -36,9 +36,8 @@ module.exports = {
         'nodes/scope',
         'nodes/context',
         'nodes/dynamic-ports',
-        'nodes/visual-states',
-        'nodes/variants',
         'nodes/frontend-nodes',
+        'nodes/visual-states',
       ],
     },
     {

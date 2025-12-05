@@ -15,19 +15,6 @@ NodeScope (`nodescope.js`) manages all node instances within a component. It han
 - Handles node model synchronization
 - Provides node lookup and queries
 
-## Creating a NodeScope
-
-```javascript
-const NodeScope = require("./nodescope");
-
-const scope = new NodeScope(context, componentOwner);
-```
-
-### Parameters
-
-- `context` - NodeContext instance
-- `componentOwner` - Parent component instance (if any)
-
 ## Node Creation
 
 ### Create from Model

@@ -214,29 +214,6 @@ inputs: {
       this._internal.alignment = value;
       this.updateAlignment();
     }
-  },
-
-  // Enum with groups
-  category: {
-    type: {
-      name: 'enum',
-      enums: [
-        {
-          label: 'Basic',
-          values: [
-            { label: 'Type A', value: 'a' },
-            { label: 'Type B', value: 'b' }
-          ]
-        },
-        {
-          label: 'Advanced',
-          values: [
-            { label: 'Type X', value: 'x' },
-            { label: 'Type Y', value: 'y' }
-          ]
-        }
-      ]
-    }
   }
 }
 ```

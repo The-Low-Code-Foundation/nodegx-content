@@ -47,8 +47,6 @@ This guide will help you set up your development environment to contribute to Op
 
 - ESLint
 - Prettier
-- GitLens
-- Auto Rename Tag
 
 ### Environment Variables
 

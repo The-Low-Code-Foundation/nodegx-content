@@ -12,9 +12,9 @@ Node instances are runtime objects created from node definitions. They manage st
 All nodes inherit from `node.js` which provides core functionality:
 
 ```javascript
-const Node = require("./node");
+import * as Noodl from "@noodl/noodl-sdk";
 
-class MyNode extends Node {
+const MyNode = Noodl.defineNode( {
   constructor(context, id) {
     super(context, id);
     // Custom initialization

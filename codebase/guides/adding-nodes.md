@@ -19,9 +19,9 @@ Create a new file in `/packages/noodl-core-nodes/src/`:
 
 ```javascript
 // MyCustomNode.js
-const { Node } = require("@noodl/runtime");
+import * as Noodl from "@noodl/noodl-sdk";
 
-class MyCustomNode extends Node {
+const MyCustomNode = Noodl.defineNode( {
   static displayName = "My Custom Node";
   static category = "Utilities";
 
@@ -47,7 +47,7 @@ class MyCustomNode extends Node {
     this.outputs.result = result;
     this.outputs.done();
   }
-}
+})
 
 module.exports = MyCustomNode;
 ```
@@ -91,7 +91,7 @@ module.exports = {
 ### Dynamic Inputs/Outputs
 
 ```javascript
-class DynamicNode extends Node {
+const DynamicNode = Noodl.defineNode({
   static getInputs(nodeModel) {
     const inputs = { count: { type: "number" } };
 
@@ -106,13 +106,13 @@ class DynamicNode extends Node {
   static getOutputs(nodeModel) {
     // Similar dynamic output generation
   }
-}
+})
 ```
 
 ### Node Parameters
 
 ```javascript
-class ConfigurableNode extends Node {
+const ConfigurableNode = Noodl.defineNode({
   static parameters = {
     mode: {
       type: "enum",
@@ -126,13 +126,13 @@ class ConfigurableNode extends Node {
       max: 10,
     },
   };
-}
+})
 ```
 
 ### State Management
 
 ```javascript
-class StatefulNode extends Node {
+const StatefulNode = Noodl.defineNode({
   constructor() {
     super();
     this.state = {
@@ -147,7 +147,7 @@ class StatefulNode extends Node {
 
     this.outputs.count = this.state.counter;
   }
-}
+})
 ```
 
 ## UI Component Nodes
@@ -155,7 +155,7 @@ class StatefulNode extends Node {
 ### React Component Integration
 
 ```javascript
-class MyUINode extends Node {
+const MyUINode = Noodl.defineNode({
   static displayName = "Custom Button";
   static category = "UI";
 
@@ -173,7 +173,7 @@ class MyUINode extends Node {
     label: { type: "string", displayName: "Label" },
     onClick: { type: "signal", displayName: "Click" },
   };
-}
+})
 ```
 
 ## Testing Nodes
@@ -233,30 +233,6 @@ execute() {
     // Node logic here
   } catch (error) {
     this.sendError('MyCustomNode', error.message)
-  }
-}
-```
-
-## Documentation
-
-Add documentation for your node:
-
-```javascript
-static docs = {
-  description: 'Converts input text to uppercase',
-  examples: [
-    {
-      title: 'Basic Usage',
-      description: 'Connect a string input and trigger to see the uppercase result'
-    }
-  ],
-  inputs: {
-    value: 'The text to convert to uppercase',
-    trigger: 'Signal to execute the conversion'
-  },
-  outputs: {
-    result: 'The uppercase version of the input text',
-    done: 'Signal sent when conversion is complete'
   }
 }
 ```
