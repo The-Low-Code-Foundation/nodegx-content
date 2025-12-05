@@ -120,6 +120,18 @@ const config = {
       },
     ],
 
+    // Codebase docs
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'codebase',
+        path: 'codebase',
+        routeBasePath: 'codebase',
+        breadcrumbs: false,
+        sidebarPath: require.resolve('./sidebarsCodebase.js'),
+      },
+    ],
+
     // Copy static md files for editor inline docs
     [
       require('./plugins/copy-node-markdowns'),
@@ -183,6 +195,11 @@ const config = {
           to: '/javascript/overview',
           position: 'right',
           className: 'has-divider',
+        },
+        {
+          label: 'Codebase',
+          to: '/codebase/overview',
+          position: 'right',
         },
         {
           label: 'Discord',
