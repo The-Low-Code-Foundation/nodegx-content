@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm ls:*)",
+      "Bash(node --version:*)",
+      "Bash(grep:*)",
+      "Bash(cat:*)",
+      "Bash(test:*)",
+      "Bash(npm --version:*)",
+      "Bash(git log:*)",
+      "Bash(gh run list:*)",
+      "Bash(find:*)",
+      "Bash(npm ci:*)",
+      "Bash(npm run build:*)",
+      "Bash(git stash:*)",
+      "Bash(lsof:*)",
+      "Bash(xargs kill:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

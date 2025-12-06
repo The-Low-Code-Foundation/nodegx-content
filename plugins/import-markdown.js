@@ -5,11 +5,11 @@
  * which Docusaurus doesn't support yet.
  */
 
-import path from 'path'
-import { remark } from 'remark'
-import remarkMdx from 'remark-mdx'
-import { _parseNoodlMarkupPlugin } from './markdown-syntax.js'
-import { readFileSync } from 'fs'
+const path = require('path')
+const { remark } = require('remark')
+const remarkMdx = require('remark-mdx')
+const { _parseNoodlMarkupPlugin } = require('./markdown-syntax')
+const { readFileSync } = require('fs')
 
 function flatMap(ast, fn) {
   return transform(ast, 0, null)[0]
@@ -75,7 +75,7 @@ function includeMarkdownPlugin({
         // NOTE: Use our _parseNoodlMarkupPlugin plugin
 
         // use remark-mdx to process the include contents
-        processor.use(remarkMdx)
+        processor.use(remarkMdx.default)
 
         // use the includeMarkdown plugin to allow recursive includes
         processor.use(includeMarkdownPlugin, {

@@ -8,4 +8,4 @@ This section provides a detailed technical overview of the source code, architec
 - [Architecture](./architecture/overview.md)
 - [Codebase structure](./structure/folders.md)
 - [Nodes](./nodes/overview.md)
-- [Development Guides](./development.md)
+- [Development Guides](./guides/adding-nodes.md)

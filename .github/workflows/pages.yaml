@@ -26,8 +26,7 @@ jobs:
         with:
           node-version: 18.x
           cache: "npm"
-      - run: npm install
-        continue-on-error: true
+      - run: npm ci
       - run: npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -40,9 +39,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      # TODO: Do we need checkout here?
-      - name: Checkout
-        uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Deploy to GitHub Pages

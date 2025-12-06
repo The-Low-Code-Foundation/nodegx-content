@@ -35,11 +35,8 @@ The Noodl nodes system is the foundation of the runtime. Nodes are the building 
 
 - [Node Definition](definition.md) - How to define new node types
 - [Node Instance](instance.md) - Runtime node instance behavior
-- [Inputs & Outputs](inputoutputs.md) - Port system and data flow
-- [Registration](register.md) - Node registry and lifecycle
 - [Node Scope](scope.md) - Component-level node management
 - [Node Context](context.md) - Runtime environment and services
-- [Lifecycle Hooks](hooks.md) - Initialization and cleanup
 - [Dynamic Ports](dynamic-ports.md) - Runtime port generation
 - [Visual States](visual-states.md) - State-based parameter system
 - [Variants](variants.md) - Node variant system

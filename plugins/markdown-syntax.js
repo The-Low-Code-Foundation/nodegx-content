@@ -7,6 +7,7 @@ function _visit(children, fn) {
 
 function _parseNoodlMarkupPlugin() {
     return function (ast) {
+        if (!ast || !ast.children) return;
         _visit(ast.children, (node) => {
             if (typeof node.value === 'string') {
                 node.value = node.value.replace(
@@ -20,6 +21,7 @@ function _parseNoodlMarkupPlugin() {
 
 function _parseRenderedMarkupPlugin() {
     return function (ast) {
+        if (!ast || !ast.children) return;
         _visit(ast.children, (node) => {
             if (node.type === 'element' && node.tagName === 'p') {
                 const hasContent = node.children.find((child) =>
