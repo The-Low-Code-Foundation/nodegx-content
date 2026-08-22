@@ -1,5 +1,82 @@
 [
   {
+    "label": "App Shell",
+    "desc": "The frame an app lives inside: a sidebar (app name slot + data-driven nav items with active-route highlighting), a top bar (page title, actions slot, user area placeholder), and a content outlet where your Page Router goes. Nav items are a plain array (Label/Icon/Target) fed from a Static Data node or the Nav Items input; clicking one navigates to its Target and emits Nav Click/Nav Target. Below the Collapse Below breakpoint (default 768px) the sidebar collapses behind a hamburger button.",
+    "project": "library/prefabs/app-shell-1.0.0.zip",
+    "icon": "library/prefabs/app-shell-1.0.0.png",
+    "docs": "/library/prefabs/app-shell/",
+    "tags": [
+      "UI",
+      "Layout",
+      "Navigation"
+    ],
+    "type": "prefab",
+    "version": "1.0.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "Auth Pages",
+    "desc": "Complete sign-in flow behind a Page Router: Sign In, Sign Up, Forgot Password and Reset Password pages built on the built-in Log In, Sign Up, Request Password Reset and Reset Password nodes. Labelled email/password inputs, inline error text from each node's Error output, loading state on every submit button, and links between the pages. Fires an \"Auth Success\" event when a user signs in or signs up.",
+    "project": "library/prefabs/auth-pages-1.0.0.zip",
+    "icon": "library/prefabs/auth-pages-1.0.0.png",
+    "docs": "/library/prefabs/auth-pages/",
+    "tags": [
+      "Auth",
+      "UI",
+      "Pages"
+    ],
+    "type": "prefab",
+    "version": "1.0.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "Card & Card Grid",
+    "desc": "A styled Card (optional media area on top, title, body text, footer/actions strip, Clicked signal, hover affordance) plus a responsive Card Grid that repeats it over any data array. The grid packs as many 240px-minimum columns as fit and degrades to a single full-width column when narrow. Out of the box it renders six sample cards from a Static Data node; connect your own array (Title/Body/Image/Footer per item) to the Items input and it wins over the samples. The grid forwards each card's click as Card Clicked with Clicked Title and Clicked Item Id.",
+    "project": "library/prefabs/card-grid-1.0.0.zip",
+    "icon": "library/prefabs/card-grid-1.0.0.png",
+    "docs": "/library/prefabs/card-grid/",
+    "tags": [
+      "UI",
+      "Layout",
+      "Data"
+    ],
+    "type": "prefab",
+    "version": "1.0.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "Confirm Dialog",
+    "desc": "A modal confirmation dialog with the ERG-001 outcome contract: distinct Confirmed and Cancelled signal outputs (never a single ambiguous Closed), Open/Close signal inputs, Title/Message/Confirm Label/Cancel Label string inputs, and a Danger boolean that restyles the confirm button for destructive actions. Clicking the scrim or the cancel button emits Cancelled; only the confirm button emits Confirmed.",
+    "project": "library/prefabs/confirm-dialog-1.0.0.zip",
+    "icon": "library/prefabs/confirm-dialog-1.0.0.png",
+    "docs": "/library/prefabs/confirm-dialog/",
+    "tags": [
+      "UI",
+      "Feedback"
+    ],
+    "type": "prefab",
+    "version": "1.0.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "CRUD Screen",
+    "desc": "A complete list-edit screen over one cloud collection: Query Records list with full-text search and Prev/Next pagination, a side panel that creates (Create Record) or edits (Update Record, form pre-filled via a Record node) the selected row, and per-row delete with an inline Yes/No confirm (Delete Record). Hand-built loading and empty states. The collection is one input: set Class on the CRUD Screen instance.",
+    "project": "library/prefabs/crud-screen-1.0.0.zip",
+    "icon": "library/prefabs/crud-screen-1.0.0.png",
+    "docs": "/library/prefabs/crud-screen/",
+    "tags": [
+      "UI",
+      "Data"
+    ],
+    "type": "prefab",
+    "version": "1.0.0",
+    "minEditorVersion": "0.1.0"
+  },
+  {
     "label": "Date Picker",
     "desc": "A date picker input with a pop-up calendar for selecting a date.",
     "project": "library/prefabs/date-picker-1.4.0.zip",
@@ -63,6 +140,36 @@
     "runtimeVersion": "2.7.0"
   },
   {
+    "label": "Form Fields",
+    "desc": "Labelled field components for writing one form by hand: Labelled Text Input, Labelled Select, Labelled Checkbox, Labelled Textarea and Labelled Date. Every field has Label, Helper Text, Error (error text shows and the border turns destructive when it is non-empty), Required (asterisk marker) and Disabled inputs, plus Value/Checked and Changed outputs. Consistent 40px control height, Inter typography, design-token colours and a visible focus ring. A Form Fields demo component shows all five stacked.",
+    "project": "library/prefabs/form-fields-1.0.0.zip",
+    "icon": "library/prefabs/form-fields-1.0.0.png",
+    "docs": "/library/prefabs/form-fields/",
+    "tags": [
+      "UI",
+      "Form"
+    ],
+    "type": "prefab",
+    "version": "1.0.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "Image Cropper",
+    "desc": "Image Cropper Module. Mainly intended for cropping profile pictures.",
+    "project": "library/prefabs/image-cropper-1.6.0.zip",
+    "icon": "library/prefabs/image-cropper-1.6.0.png",
+    "docs": "/library/modules/image-cropper/",
+    "tags": [
+      "UI",
+      "Utility"
+    ],
+    "type": "prefab",
+    "version": "1.6.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
     "label": "List With Icons",
     "desc": "A simple list component with icons and labels.",
     "project": "library/prefabs/list-with-icons-1.0.0.zip",
@@ -74,21 +181,6 @@
     ],
     "type": "prefab",
     "version": "1.0.0",
-    "minEditorVersion": "0.1.0",
-    "runtimeVersion": "2.7.0"
-  },
-  {
-    "label": "Loading Spinner",
-    "desc": "A loading spinner that can be shown when requesting data etc.",
-    "project": "library/prefabs/loading-spinner-0.1.0.zip",
-    "icon": "library/prefabs/loading-spinner-0.1.0.png",
-    "docs": "/library/prefabs/loading-spinner/",
-    "tags": [
-      "UI",
-      "Feedback"
-    ],
-    "type": "prefab",
-    "version": "0.1.0",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
@@ -123,34 +215,18 @@
     "runtimeVersion": "2.7.0"
   },
   {
-    "label": "Multi Choice",
-    "desc": "A component that allows for multi selection in a group of checkboxes.",
-    "project": "library/prefabs/multi-choice-0.6.0.zip",
-    "icon": "library/prefabs/multi-choice-0.6.0.png",
-    "docs": "/library/prefabs/multi-choice/",
+    "label": "Multi Select",
+    "desc": "Multi-select input in three display variants, each a drop-in component: List (checkbox group), Pills (toggleable pill buttons), and Dropdown (a drop-down whose selected items show as removable pills). All three are data-driven — feed an Options array (plus optional Labels and an initial Selection) and read the result from the Selected Items output and the Changed signal.",
+    "project": "library/prefabs/multi-select-1.0.0.zip",
+    "icon": "library/prefabs/multi-select-1.0.0.png",
+    "docs": "/library/prefabs/multi-select/",
     "tags": [
       "UI",
       "Form",
       "Input"
     ],
     "type": "prefab",
-    "version": "0.6.0",
-    "minEditorVersion": "0.1.0",
-    "runtimeVersion": "2.7.0"
-  },
-  {
-    "label": "Multi Choice with Pills",
-    "desc": "A multi select drop down, showing the selected items as pills.",
-    "project": "library/prefabs/multi-choice-with-pills-0.10.0.zip",
-    "icon": "library/prefabs/multi-choice-with-pills-0.10.0.png",
-    "docs": "/library/prefabs/multi-choice-with-pills/",
-    "tags": [
-      "UI",
-      "Form",
-      "Input"
-    ],
-    "type": "prefab",
-    "version": "0.10.0",
+    "version": "1.0.0",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
@@ -185,47 +261,47 @@
     "runtimeVersion": "2.7.0"
   },
   {
-    "label": "Pages And Rows",
-    "desc": "A component for pagination, letting user pick page and number of rows per page.",
-    "project": "library/prefabs/pages-and-rows-0.3.0.zip",
-    "icon": "library/prefabs/pages-and-rows-0.3.0.png",
-    "docs": "/library/prefabs/pagesandrows/",
+    "label": "Page Header",
+    "desc": "Standard page header: an h1 title, an optional subtitle (hidden until set), a data-driven breadcrumb trail and a right-aligned actions slot. Breadcrumbs take an array of {label, target} objects — separators are drawn between crumbs and the last crumb renders inert (foreground colour, no click). Clicking any earlier crumb emits the Crumb Clicked signal with that crumb's target on Crumb Target, ready to wire into navigation. Action buttons are added as children of the placed instance (Component Children slot).",
+    "project": "library/prefabs/page-header-1.0.0.zip",
+    "icon": "library/prefabs/page-header-1.0.0.png",
+    "docs": "/library/prefabs/page-header/",
     "tags": [
       "UI",
-      "Data"
+      "Navigation"
     ],
     "type": "prefab",
-    "version": "0.3.0",
+    "version": "1.0.0",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
   {
     "label": "Pagination",
-    "desc": "A component for pagination, showing available pages and letting user switch.",
-    "project": "library/prefabs/pagination-0.2.0.zip",
-    "icon": "library/prefabs/pagination-0.2.0.png",
+    "desc": "Full pagination control: page numbers with ellipsis overflow, prev/next buttons, an optional rows-per-page selector and an optional \"Showing X–Y of Z\" summary. Inputs: Total Items, Items Per Page, Current Page. Outputs: Current Page, Offset (plugs into Query Records' Skip), Items Per Page (plugs into Limit) and a Changed signal. Merges the former Pages And Rows prefab.",
+    "project": "library/prefabs/pagination-2.0.0.zip",
+    "icon": "library/prefabs/pagination-2.0.0.png",
     "docs": "/library/prefabs/pagination/",
     "tags": [
       "UI",
       "Data"
     ],
     "type": "prefab",
-    "version": "0.2.0",
+    "version": "2.0.0",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
   {
-    "label": "Popup Modal",
-    "desc": "Contains a classic popup modal for simple confirm popups.",
-    "project": "library/prefabs/popup-modal-0.2.0.zip",
-    "icon": "library/prefabs/popup-modal-0.2.0.png",
-    "docs": "/library/prefabs/modal/",
+    "label": "Panning and Zooming Control",
+    "desc": "A control that implements a pan and zoom view on large images.",
+    "project": "library/prefabs/panning-and-zooming-control-1.2.0.zip",
+    "icon": "library/prefabs/panning-and-zooming-control-1.2.0.png",
+    "docs": "/library/modules/panning-and-zooming/",
     "tags": [
       "UI",
-      "Feedback"
+      "Utility"
     ],
     "type": "prefab",
-    "version": "0.2.0",
+    "version": "1.2.0",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
@@ -261,22 +337,6 @@
     "runtimeVersion": "2.7.0"
   },
   {
-    "label": "Selection Pills",
-    "desc": "A list of selection pills, select one or many.",
-    "project": "library/prefabs/selection-pills-0.2.0.zip",
-    "icon": "library/prefabs/selection-pills-0.2.0.png",
-    "docs": "/library/prefabs/selection-pills/",
-    "tags": [
-      "UI",
-      "Form",
-      "Input"
-    ],
-    "type": "prefab",
-    "version": "0.2.0",
-    "minEditorVersion": "0.1.0",
-    "runtimeVersion": "2.7.0"
-  },
-  {
     "label": "Send Grid",
     "desc": "Send emails with SendGrid from a cloud function. Configure by provisioning the backend function secret SENDGRID_API_KEY — see the prefab README.",
     "project": "library/prefabs/send-grid-0.3.0.zip",
@@ -290,6 +350,34 @@
     "version": "0.3.0",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "Shake Detector",
+    "desc": "A small module to detect a device shake with the accelerometer.",
+    "project": "library/prefabs/shake-detector-1.1.0.zip",
+    "icon": "library/prefabs/shake-detector-1.1.0.png",
+    "docs": "/library/modules/shake-detector/",
+    "tags": [
+      "Device"
+    ],
+    "type": "prefab",
+    "version": "1.1.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "States Kit",
+    "desc": "The four states every list and screen needs: Loading (an inline spinner plus a full-area overlay with a Visible input), Empty (glyph, title, hint and an optional action button with a Clicked signal), Error (message plus a Retry signal output), and Skeleton placeholders (a pulsing text row and a card). Each state is its own component, styled with the project design tokens, with a Demo component showing them together.",
+    "project": "library/prefabs/states-kit-1.0.0.zip",
+    "icon": "library/prefabs/states-kit-1.0.0.png",
+    "docs": "/library/prefabs/states-kit/",
+    "tags": [
+      "UI",
+      "Feedback"
+    ],
+    "type": "prefab",
+    "version": "1.0.0",
+    "minEditorVersion": "0.1.0"
   },
   {
     "label": "Stripe",
@@ -309,9 +397,9 @@
   },
   {
     "label": "Supabase",
-    "desc": "Connects to Supabase and handles queries, users and authTokens. Built by @gmaison and @RicoTrevisan.",
-    "project": "library/prefabs/supabase-1.1.0.zip",
-    "icon": "library/prefabs/supabase-1.1.0.png",
+    "desc": "Supabase connector: pure-logic components for auth and data. Setup Client creates the client from your project URL + anon key (Noodl.Variables.supabase); Log In, Log Out, Sign Up, Send Magic Link, Send Password Reset, Resend Confirmation, Update/Fetch Current User Auth and Profile Data cover the auth flows, and an Example Request shows a from().select() query. No UI — wire the Do/Success/Failure signals into your own pages. Originally by @gmaison and @RicoTrevisan.",
+    "project": "library/prefabs/supabase-2.0.0.zip",
+    "icon": "library/prefabs/supabase-2.0.0.png",
     "docs": "/library/prefabs/supabase/",
     "tags": [
       "Data",
@@ -319,7 +407,7 @@
       "Backend"
     ],
     "type": "prefab",
-    "version": "1.1.0",
+    "version": "2.0.0",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },

@@ -1,43 +1,57 @@
 [
   {
     "label": "Avatar",
-    "desc": "A module with components to build avatars.",
-    "project": "library/modules/avatar-1.0.1.zip",
-    "icon": "library/modules/avatar-1.0.1.png",
+    "desc": "Registers an Avatar visual node (image, initials or custom content; sizes xsmall to xxlarge; borders, outlines and hover states) plus Avatar Group / Avatar Group Item components for overlapping avatar stacks driven by an Items array. Includes a Sample component demonstrating every variant. No longer bundles a Material Icons icon set — install the standalone Material Icons module if you want glyph avatars.",
+    "project": "library/modules/avatar-1.1.0.zip",
+    "icon": "library/modules/avatar-1.1.0.png",
     "docs": "/library/modules/avatar/",
     "tags": [
       "UI"
     ],
     "type": "module",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
   {
     "label": "Chart.js",
     "desc": "A module with components to build charts.",
-    "project": "library/modules/chart-js-1.4.3.zip",
-    "icon": "library/modules/chart-js-1.4.3.png",
+    "project": "library/modules/chart-js-1.4.4.zip",
+    "icon": "library/modules/chart-js-1.4.4.png",
     "docs": "/library/modules/chartjs/",
     "tags": [
       "UI"
     ],
     "type": "module",
-    "version": "1.4.3",
+    "version": "1.4.4",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "Clipboard",
+    "desc": "Copy any text to the user's clipboard. Ships a Copy To Clipboard node — set Text, fire Copy, and get Success/Failure signals plus an Error string. Uses navigator.clipboard.writeText in secure contexts (https/localhost) with an automatic document.execCommand('copy') fallback for plain-http and older browsers. No dependencies, no network.",
+    "project": "library/modules/clipboard-1.0.0.zip",
+    "icon": "library/modules/clipboard-1.0.0.png",
+    "docs": "/library/modules/clipboard/",
+    "tags": [
+      "Utility"
+    ],
+    "type": "module",
+    "version": "1.0.0",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
   {
     "label": "Confetti",
     "desc": "A celebration trigger node — fire a burst, fireworks, side cannons or falling confetti over the page with one signal (canvas-confetti, MIT). Client-side; styleable count, spread, origin and colours.",
-    "project": "library/modules/confetti-1.0.0.zip",
-    "icon": "library/modules/confetti-1.0.0.png",
+    "project": "library/modules/confetti-1.0.1.zip",
+    "icon": "library/modules/confetti-1.0.1.png",
     "docs": "/library/modules/confetti/",
     "tags": [
       "UI"
     ],
     "type": "module",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
@@ -71,6 +85,20 @@
     "runtimeVersion": "2.7.0"
   },
   {
+    "label": "Drag to Reorder",
+    "desc": "Sortable list with drag-and-drop reordering, built directly on pointer events — mouse, touch and pen all work. Ships a Drag To Reorder node: feed it an Items array and it renders the rows; while dragging, the other rows translate out of the way and a drop indicator marks the target slot. Dropping outputs Reordered Items (a new array — the input is never mutated), From Index and To Index, then fires a Changed signal. Row colours come from design tokens and are stylable per instance. No dependencies, no network.",
+    "project": "library/modules/drag-to-reorder-1.0.0.zip",
+    "icon": "library/modules/drag-to-reorder-1.0.0.png",
+    "docs": "/library/modules/drag-to-reorder/",
+    "tags": [
+      "UI"
+    ],
+    "type": "module",
+    "version": "1.0.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
     "label": "Example Node Kit",
     "desc": "A custom node you can read in one sitting. One React node whose every visual decision is a port — colour, spacing and size default to design tokens — plus the kit types, so your editor autocompletes the definition. Install it to see how a node kit is put together, then edit index.js and make it yours.",
     "project": "library/modules/example-node-kit-1.0.0.zip",
@@ -85,89 +113,74 @@
     "runtimeVersion": "2.7.0"
   },
   {
+    "label": "File Download",
+    "desc": "A Download File logic node that saves any string to the user's machine as a real file — Blob + object URL, fully client-side, no dependencies. Wire To CSV's CSV output into Content, send Download, and get Done or Failure + Error. Filename and MIME Type inputs (text/plain default; use text/csv or application/json). Ships a demo component: Static Data → To CSV → Download File behind a button.",
+    "project": "library/modules/file-download-1.0.0.zip",
+    "icon": "library/modules/file-download-1.0.0.png",
+    "docs": "/library/modules/file-download/",
+    "tags": [
+      "Utility",
+      "Data"
+    ],
+    "type": "module",
+    "version": "1.0.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
     "label": "Font Awesome Brands",
     "desc": "The Font Awesome 6 brand icon library.",
-    "project": "library/modules/font-awesome-brands-1.0.0.zip",
-    "icon": "library/modules/font-awesome-brands-1.0.0.png",
+    "project": "library/modules/font-awesome-brands-1.0.1.zip",
+    "icon": "library/modules/font-awesome-brands-1.0.1.png",
     "docs": "/library/modules/font-awesome-brands/",
     "tags": [
       "UI"
     ],
     "type": "module",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
   {
     "label": "Font Awesome Solid",
     "desc": "The Font Awesome 6 solid icon library.",
-    "project": "library/modules/font-awesome-solid-1.0.0.zip",
-    "icon": "library/modules/font-awesome-solid-1.0.0.png",
+    "project": "library/modules/font-awesome-solid-1.0.1.zip",
+    "icon": "library/modules/font-awesome-solid-1.0.1.png",
     "docs": "/library/modules/font-awesome-solid/",
     "tags": [
       "UI"
     ],
     "type": "module",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
   {
     "label": "Form Validation",
     "desc": "A utility node that makes different kind of form validation easier.",
-    "project": "library/modules/form-validation-1.3.0.zip",
-    "icon": "library/modules/form-validation-1.3.0.png",
+    "project": "library/modules/form-validation-1.3.1.zip",
+    "icon": "library/modules/form-validation-1.3.1.png",
     "docs": "/library/modules/validation/",
     "tags": [
       "Data",
       "Utility"
     ],
     "type": "module",
-    "version": "1.3.0",
+    "version": "1.3.1",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
   {
     "label": "Geospatial Analysis",
     "desc": "A module for using Turf.js to making it easy to working with GeoJSON.",
-    "project": "library/modules/geospatial-analysis-1.0.0.zip",
-    "icon": "library/modules/geospatial-analysis-1.0.0.png",
+    "project": "library/modules/geospatial-analysis-1.0.1.zip",
+    "icon": "library/modules/geospatial-analysis-1.0.1.png",
     "docs": "/library/modules/geospatial-analysis/",
     "tags": [
       "Data"
     ],
     "type": "module",
-    "version": "1.0.0",
-    "minEditorVersion": "0.1.0",
-    "runtimeVersion": "2.7.0"
-  },
-  {
-    "label": "Google Analytics",
-    "desc": "Track user behavior with Google Analytics.",
-    "project": "library/modules/google-analytics-1.0.7.zip",
-    "icon": "library/modules/google-analytics-1.0.7.png",
-    "docs": "/library/modules/google-analytics/",
-    "tags": [
-      "Service",
-      "Analytics"
-    ],
-    "type": "module",
-    "version": "1.0.7",
-    "minEditorVersion": "0.1.0",
-    "runtimeVersion": "2.7.0"
-  },
-  {
-    "label": "Google Sheets",
-    "desc": "Use your google sheets as a data source for your applications.",
-    "project": "library/modules/google-sheets-1.7.0.zip",
-    "icon": "library/modules/google-sheets-1.7.0.png",
-    "docs": "/library/modules/gsheets/",
-    "tags": [
-      "Service",
-      "Data"
-    ],
-    "type": "module",
-    "version": "1.7.0",
+    "version": "1.0.1",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
@@ -189,56 +202,27 @@
   {
     "label": "i18next Translation",
     "desc": "A module for using i18next in Noodl.",
-    "project": "library/modules/i18next-translation-1.0.3.zip",
-    "icon": "library/modules/i18next-translation-1.0.3.png",
+    "project": "library/modules/i18next-translation-1.0.4.zip",
+    "icon": "library/modules/i18next-translation-1.0.4.png",
     "docs": "/library/modules/i18next/",
     "tags": [
       "Data",
       "Utility"
     ],
     "type": "module",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
   {
-    "label": "Image Cropper",
-    "desc": "Image Cropper Module. Mainly intended for cropping profile pictures.",
-    "project": "library/modules/image-cropper-1.5.0.zip",
-    "icon": "library/modules/image-cropper-1.5.0.png",
-    "docs": "/library/modules/image-cropper/",
+    "label": "Intl Format",
+    "desc": "Locale-aware formatting nodes built on the browser's Intl APIs — no dependencies, no network. Relative Time turns a date into \"3 hours ago\" with an optional auto-refresh interval; Format Number handles decimal, currency and percent styles; Format List joins items with a localized conjunction or disjunction; Pluralize picks the right one/other form with Intl.PluralRules. Every node has a Locale input defaulting to the browser language, and every input is guarded — an unconnected input yields an empty string instead of throwing.",
+    "project": "library/modules/intl-format-1.0.0.zip",
+    "icon": "library/modules/intl-format-1.0.0.png",
+    "docs": "/library/modules/intl-format/",
     "tags": [
-      "UI",
-      "Utility"
-    ],
-    "type": "module",
-    "version": "1.5.0",
-    "minEditorVersion": "0.1.0",
-    "runtimeVersion": "2.7.0"
-  },
-  {
-    "label": "Lottie",
-    "desc": "A module for using Lottie animations in Noodl.",
-    "project": "library/modules/lottie-1.0.1.zip",
-    "icon": "library/modules/lottie-1.0.1.png",
-    "docs": "/library/modules/lottie/",
-    "tags": [
-      "UI",
-      "Animation"
-    ],
-    "type": "module",
-    "version": "1.0.1",
-    "minEditorVersion": "0.1.0",
-    "runtimeVersion": "2.7.0"
-  },
-  {
-    "label": "Lucide Icons",
-    "desc": "The Lucide open-source icon set (1998 glyphs, ISC licence) as a bundled webfont iconset — a community-friendly alternative to Material Icons.",
-    "project": "library/modules/lucide-icons-1.0.0.zip",
-    "icon": "library/modules/lucide-icons-1.0.0.png",
-    "docs": "/library/modules/lucide-icons/",
-    "tags": [
-      "UI"
+      "Utilities",
+      "Localization"
     ],
     "type": "module",
     "version": "1.0.0",
@@ -246,31 +230,60 @@
     "runtimeVersion": "2.7.0"
   },
   {
-    "label": "Mapbox",
-    "desc": "Use this module to add maps and location visualisations to your app.",
-    "project": "library/modules/mapbox-2.0.0.zip",
-    "icon": "library/modules/mapbox-2.0.0.png",
-    "docs": "/library/modules/mapbox/",
+    "label": "Lottie",
+    "desc": "A module for using Lottie animations in Noodl.",
+    "project": "library/modules/lottie-1.0.2.zip",
+    "icon": "library/modules/lottie-1.0.2.png",
+    "docs": "/library/modules/lottie/",
+    "tags": [
+      "UI",
+      "Animation"
+    ],
+    "type": "module",
+    "version": "1.0.2",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "Lucide Icons",
+    "desc": "The Lucide open-source icon set (1998 glyphs, ISC licence) as a bundled webfont iconset — a community-friendly alternative to Material Icons.",
+    "project": "library/modules/lucide-icons-1.0.1.zip",
+    "icon": "library/modules/lucide-icons-1.0.1.png",
+    "docs": "/library/modules/lucide-icons/",
+    "tags": [
+      "UI"
+    ],
+    "type": "module",
+    "version": "1.0.1",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "MapLibre GL",
+    "desc": "Interactive maps with zero configuration — a MapLibre Map node that renders the free MapLibre demo style out of the box (no access token, no account). Style URL, camera (longitude/latitude/zoom/bearing/pitch) and a Markers array are inputs; camera position, click coordinates and marker clicks are outputs. Bundles MapLibre GL JS 4.7.1 (BSD-3-Clause).",
+    "project": "library/modules/maplibre-1.0.0.zip",
+    "icon": "library/modules/maplibre-1.0.0.png",
+    "docs": "/library/modules/maplibre/",
     "tags": [
       "UI",
       "Service"
     ],
     "type": "module",
-    "version": "2.0.0",
+    "version": "1.0.0",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
   {
     "label": "Markdown",
     "desc": "Use Markdown in Noodl and style it with CSS.",
-    "project": "library/modules/markdown-1.0.1.zip",
-    "icon": "library/modules/markdown-1.0.1.png",
+    "project": "library/modules/markdown-1.0.2.zip",
+    "icon": "library/modules/markdown-1.0.2.png",
     "docs": "/library/modules/markdown/",
     "tags": [
       "Code"
     ],
     "type": "module",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
@@ -305,68 +318,66 @@
   {
     "label": "MQTT Module",
     "desc": "Send and receive messages over the MQTT protocol in web apps.",
-    "project": "library/modules/mqtt-module-1.0.3.zip",
-    "icon": "library/modules/mqtt-module-1.0.3.png",
+    "project": "library/modules/mqtt-module-1.0.4.zip",
+    "icon": "library/modules/mqtt-module-1.0.4.png",
     "docs": "/library/modules/mqtt/",
     "tags": [
       "Device",
       "Networking"
     ],
     "type": "module",
-    "version": "1.0.3",
-    "minEditorVersion": "0.1.0",
-    "runtimeVersion": "2.7.0"
-  },
-  {
-    "label": "Panning and Zooming Control",
-    "desc": "A control that implements a pan and zoom view on large images.",
-    "project": "library/modules/panning-and-zooming-control-1.1.0.zip",
-    "icon": "library/modules/panning-and-zooming-control-1.1.0.png",
-    "docs": "/library/modules/panning-and-zooming/",
-    "tags": [
-      "UI",
-      "Utility"
-    ],
-    "type": "module",
-    "version": "1.1.0",
-    "minEditorVersion": "0.1.0",
-    "runtimeVersion": "2.7.0"
-  },
-  {
-    "label": "Parse Cloud Function",
-    "desc": "Call Parse Platform cloud functions.",
-    "project": "library/modules/parse-cloud-function-1.0.0.zip",
-    "icon": "library/modules/parse-cloud-function-1.0.0.png",
-    "docs": "/library/modules/parse-cloud-function/",
-    "tags": [
-      "Data",
-      "Networking"
-    ],
-    "type": "module",
-    "version": "1.0.0",
+    "version": "1.0.4",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
   {
     "label": "PDF Viewer",
-    "desc": "A UI component for rendering PDFs from an URL.",
-    "project": "library/modules/pdf-viewer-1.0.0.zip",
-    "icon": "library/modules/pdf-viewer-1.0.0.png",
+    "desc": "A /PDF Viewer component that renders a PDF from a URL (PDF URL, Width and Height inputs) via Google's document viewer in an iframe. REQUIRES the standalone Custom HTML module — install that first; this entry no longer bundles its own copy of it. See the entry README.",
+    "project": "library/modules/pdf-viewer-1.1.0.zip",
+    "icon": "library/modules/pdf-viewer-1.1.0.png",
     "docs": "/library/modules/pdf-viewer/",
     "tags": [
       "UI"
     ],
     "type": "module",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
   {
     "label": "QR Code",
     "desc": "Renders a QR code from any text or URL, fully client-side (qrcode-generator, MIT). Styleable size, quiet zone, foreground/background colours and error-correction level.",
-    "project": "library/modules/qr-code-1.0.0.zip",
-    "icon": "library/modules/qr-code-1.0.0.png",
+    "project": "library/modules/qr-code-1.0.1.zip",
+    "icon": "library/modules/qr-code-1.0.1.png",
     "docs": "/library/modules/qr-code/",
+    "tags": [
+      "UI"
+    ],
+    "type": "module",
+    "version": "1.0.1",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "QR Scanner",
+    "desc": "Scan QR codes from camera or images.",
+    "project": "library/modules/qr-scanner-1.4.1.zip",
+    "icon": "library/modules/qr-scanner-1.4.1.png",
+    "docs": "/library/modules/qr-scanner/",
+    "tags": [
+      "Device"
+    ],
+    "type": "module",
+    "version": "1.4.1",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "Rich Text Editor",
+    "desc": "A WYSIWYG rich text editor node built on TipTap (MIT, vendored — fully offline, no CDN). Toolbar with bold, italic, headings H1–H3, bullet/ordered lists, links and undo/redo. Inputs: HTML (set content), Placeholder, Editable. Outputs: HTML, Text and a Changed signal on every edit. Toolbar and content chrome follow the app theme via design tokens.",
+    "project": "library/modules/rich-text-editor-1.0.0.zip",
+    "icon": "library/modules/rich-text-editor-1.0.0.png",
+    "docs": "/library/modules/rich-text-editor/",
     "tags": [
       "UI"
     ],
@@ -376,44 +387,31 @@
     "runtimeVersion": "2.7.0"
   },
   {
-    "label": "QR Scanner",
-    "desc": "Scan QR codes from camera or images.",
-    "project": "library/modules/qr-scanner-1.4.0.zip",
-    "icon": "library/modules/qr-scanner-1.4.0.png",
-    "docs": "/library/modules/qr-scanner/",
-    "tags": [
-      "Device"
-    ],
-    "type": "module",
-    "version": "1.4.0",
-    "minEditorVersion": "0.1.0",
-    "runtimeVersion": "2.7.0"
-  },
-  {
-    "label": "Shake Detector",
-    "desc": "A small module to detect a device shake with the accelerometer.",
-    "project": "library/modules/shake-detector-1.0.2.zip",
-    "icon": "library/modules/shake-detector-1.0.2.png",
-    "docs": "/library/modules/shake-detector/",
-    "tags": [
-      "Device"
-    ],
-    "type": "module",
-    "version": "1.0.2",
-    "minEditorVersion": "0.1.0",
-    "runtimeVersion": "2.7.0"
-  },
-  {
     "label": "Simple Tooltips",
     "desc": "Add simple tooltips to your Noodl App.",
-    "project": "library/modules/simple-tooltips-1.1.0.zip",
-    "icon": "library/modules/simple-tooltips-1.1.0.png",
+    "project": "library/modules/simple-tooltips-1.1.1.zip",
+    "icon": "library/modules/simple-tooltips-1.1.1.png",
     "docs": "/library/modules/simple-tooltips/",
     "tags": [
       "UI"
     ],
     "type": "module",
-    "version": "1.1.0",
+    "version": "1.1.1",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "Virtual List",
+    "desc": "Windowed rendering for big arrays: a Virtual List visual node keeps only the rows that intersect its viewport (plus an overscan margin) in the DOM, absolutely positioned over a full-height spacer, so a ten-thousand-row array scrolls smoothly where a Repeater stalls. Inputs: Items (array), Row Template ({{field}} text substitution), Item Height (fixed, px), Overscan, Height or Use Container Size. Outputs: First Visible Index, Visible Count. Ships a demo component with 10,000 generated rows.",
+    "project": "library/modules/virtual-list-1.0.0.zip",
+    "icon": "library/modules/virtual-list-1.0.0.png",
+    "docs": "/library/modules/virtual-list/",
+    "tags": [
+      "UI",
+      "Data"
+    ],
+    "type": "module",
+    "version": "1.0.0",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
