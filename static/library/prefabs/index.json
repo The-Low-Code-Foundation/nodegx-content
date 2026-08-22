@@ -1,234 +1,449 @@
 [
   {
     "label": "Date Picker",
-    "desc": "A date picker component.",
-    "icon": "library/prefabs/date-picker/date-picker.png",
-    "project": "library/prefabs/date-picker/date-picker-1-3.zip",
+    "desc": "A date picker input with a pop-up calendar for selecting a date.",
+    "project": "library/prefabs/date-picker-1.4.0.zip",
+    "icon": "library/prefabs/date-picker-1.4.0.png",
     "docs": "/library/prefabs/date-picker/",
-    "tags": ["UI"]
-  },
-  {
-    "label": "Time Picker",
-    "desc": "A time picker component.",
-    "icon": "library/prefabs/time-picker/time-picker.png",
-    "project": "library/prefabs/time-picker/time-picker-1-2.zip",
-    "docs": "/library/prefabs/time-picker/",
-    "tags": ["UI"]
-  },
-  {
-    "label": "Multi Choice with Pills",
-    "desc": "A multi select drop down, showing the selected items as pills.",
-    "icon": "library/prefabs/multi-choice-with-pills/multi-choice-with-pills.png",
-    "project": "library/prefabs/multi-choice-with-pills/multi-choice-with-pills-0-9.zip",
-    "docs": "/library/prefabs/multi-choice-with-pills/",
-    "tags": ["UI"]
-  },
-  {
-    "label": "Multi Choice",
-    "desc": "A component that allows for multi selection in a group of checkboxes.",
-    "icon": "library/prefabs/multi-choice/multi-choice.png",
-    "project": "library/prefabs/multi-choice/multi-choice-0-5.zip",
-    "docs": "/library/prefabs/multi-choice/",
-    "tags": ["UI"]
-  },
-  {
-    "label": "Table",
-    "desc": "Component for creating tables from data.",
-    "icon": "library/prefabs/table/table.png",
-    "project": "library/prefabs/table/table-0-6.zip",
-    "docs": "/library/prefabs/table/",
-    "tags": ["UI", "Data"]
-  },
-  {
-    "label": "Form",
-    "desc": "Component for creating dynamic forms.",
-    "icon": "library/prefabs/form/form.png",
-    "project": "library/prefabs/form/form-0-4.zip",
-    "docs": "/library/prefabs/form/",
-    "tags": ["UI", "Data"]
-  },
-  {
-    "label": "List With Icons",
-    "desc": "A simple list component with icons and labels.",
-    "icon": "library/prefabs/list-with-icons/list-with-icons.png",
-    "project": "library/prefabs/list-with-icons/list-with-icons-1-0.zip",
-    "docs": "/library/prefabs/list-with-icons/",
-    "tags": ["UI"]
-  },
-  {
-    "label": "Navigation Menu",
-    "desc": "Component for creating navigation menus.",
-    "icon": "library/prefabs/navigation-menu/navigation-menu.png",
-    "project": "library/prefabs/navigation-menu/navigation-menu-0-1.zip",
-    "docs": "/library/prefabs/navigation-menu/",
-    "tags": ["UI"]
-  },
-  {
-    "label": "Media Query",
-    "desc": "Contains a handy component to create responsive interfaces.",
-    "icon": "library/prefabs/media-query/media-query.png",
-    "project": "library/prefabs/media-query/media-query-0-2.zip",
-    "docs": "/library/prefabs/media-query/",
-    "tags": ["UI", "Utility"]
-  },
-  {
-    "label": "Progress Circle",
-    "desc": "Contains an animating progress visualization in percentage.",
-    "icon": "library/prefabs/progress-circle/progress-circle.png",
-    "project": "library/prefabs/progress-circle/progress-circle-0-1.zip",
-    "docs": "/library/prefabs/progress-circle/",
-    "tags": ["UI"]
-  },
-  {
-    "label": "Popup Modal",
-    "desc": "Contains a classic popup modal for simple confirm popups.",
-    "icon": "library/prefabs/modal/modal.png",
-    "project": "library/prefabs/modal/modal-0-1.zip",
-    "docs": "/library/prefabs/modal/",
-    "tags": ["UI"]
-  },
-  {
-    "label": "Toast",
-    "desc": "Contains Toast messages for success, warnings, errors, and neutral.",
-    "icon": "library/prefabs/toast/toast.png",
-    "project": "library/prefabs/toast/toast-0-1.zip",
-    "docs": "/library/prefabs/toast/",
-    "tags": ["UI"]
-  },
-  {
-    "label": "Toggle Switch",
-    "desc": "A toggle switch UI component.",
-    "icon": "library/prefabs/toggle/toggle.png",
-    "project": "library/prefabs/toggle/toggle-0-1.zip",
-    "docs": "/library/prefabs/toggle/",
-    "tags": ["UI"]
-  },
-  {
-    "label": "Tab Bar",
-    "desc": "A tab bar component, useful for creating tab navigation.",
-    "icon": "library/prefabs/tab-bar/tab-bar.png",
-    "project": "library/prefabs/tab-bar/tab-bar-0-1.zip",
-    "docs": "/library/prefabs/tab-bar/",
-    "tags": ["UI"]
-  },
-  {
-    "label": "Rating",
-    "desc": "An interactive star rating component.",
-    "icon": "library/prefabs/rating/rating.png",
-    "project": "library/prefabs/rating/rating-0-2.zip",
-    "docs": "/library/prefabs/rating/",
-    "tags": ["UI"]
-  },
-  {
-    "label": "Loading Spinner",
-    "desc": "A loading spinner that can be shown when requesting data etc.",
-    "icon": "library/prefabs/loading-spinner/loading-spinner.png",
-    "project": "library/prefabs/loading-spinner/loading-spinner-0-1.zip",
-    "docs": "/library/prefabs/loading-spinner/",
-    "tags": ["UI"]
-  },
-  {
-    "label": "Tags",
-    "desc": "Display a list of tags, with nice auto generated colors.",
-    "icon": "library/prefabs/tags/tags.png",
-    "project": "library/prefabs/tags/tags-0-1.zip",
-    "docs": "/library/prefabs/tags/",
-    "tags": ["UI"]
-  },
-  {
-    "label": "Selection Pills",
-    "desc": "A list of selection pills, select one or many.",
-    "icon": "library/prefabs/selection-pills/selection-pills.png",
-    "project": "library/prefabs/selection-pills/selection-pills-0-1.zip",
-    "docs": "/library/prefabs/selection-pills/",
-    "tags": ["UI"]
-  },
-  {
-    "label": "Send Grid",
-    "desc": "A simple prefab for sending emails with Send Grid.",
-    "icon": "library/prefabs/sendgrid/sendgrid.png",
-    "project": "library/prefabs/sendgrid/sendgrid-0-2.zip",
-    "docs": "/library/prefabs/sendgrid/",
-    "tags": ["Cloud"]
-  },
-  {
-    "label": "Mail Gun",
-    "desc": "A simple prefab for sending emails with Mail Gun.",
-    "icon": "library/prefabs/mailgun/mailgun.png",
-    "project": "library/prefabs/mailgun/mailgun-0-2.zip",
-    "docs": "/library/prefabs/mailgun/",
-    "tags": ["Cloud"]
+    "tags": [
+      "UI",
+      "Form",
+      "Input"
+    ],
+    "type": "prefab",
+    "version": "1.4.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
   },
   {
     "label": "Email Verification",
-    "desc": "Cloud functions for email verification and reset password.",
-    "icon": "library/prefabs/email-verification/email-verification.png",
-    "project": "library/prefabs/email-verification/email-verification-0-4.zip",
+    "desc": "Cloud functions for email verification and reset password. Configure by provisioning the backend function secrets SENDGRID_API_KEY, EMAIL_VERIFICATION_DOMAIN and EMAIL_VERIFICATION_FROM — see the prefab README.",
+    "project": "library/prefabs/email-verification-0.5.0.zip",
+    "icon": "library/prefabs/email-verification-0.5.0.png",
     "docs": "/library/prefabs/email-verification/",
-    "tags": ["Cloud"]
-  },
-  {
-    "label": "OAuth2",
-    "desc": "Cloud functions for oauth2 user authentication.",
-    "icon": "library/prefabs/oauth2/oauth2.png",
-    "project": "library/prefabs/oauth2/oauth2-0-2.zip",
-    "docs": "/library/prefabs/oauth2/",
-    "tags": ["Cloud"]
-  },
-  {
-    "label": "TOTP",
-    "desc": "Cloud functions for auth with timebased one time passwords like Google Auth.",
-    "icon": "library/prefabs/totp/totp.png",
-    "project": "library/prefabs/totp/totp-0-2.zip",
-    "docs": "/library/prefabs/totp/",
-    "tags": ["Cloud"]
-  },
-  {
-    "label": "Stripe",
-    "desc": "Some helpers to make cloud functions for accepting payments and subscriptions.",
-    "icon": "library/prefabs/stripe/stripe.png",
-    "project": "library/prefabs/stripe/stripe-0-4.zip",
-    "docs": "/library/prefabs/stripe/",
-    "tags": ["Cloud"]
-  },
-  {
-    "label": "Pagination",
-    "desc": "A component for pagination, showing available pages and letting user switch.",
-    "icon": "library/prefabs/pagination/pagination.png",
-    "project": "library/prefabs/pagination/pagination-0-2.zip",
-    "docs": "/library/prefabs/pagination/",
-    "tags": ["UI"]
-  },
-  {
-    "label": "Pages And Rows",
-    "desc": "A component for pagination, letting user pick page and number of rows per page.",
-    "icon": "library/prefabs/pagesandrows/pagesandrows.png",
-    "project": "library/prefabs/pagesandrows/pagesandrows-0-2.zip",
-    "docs": "/library/prefabs/pagesandrows/",
-    "tags": ["UI"]
+    "tags": [
+      "Cloud",
+      "Auth",
+      "Email"
+    ],
+    "type": "prefab",
+    "version": "0.5.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
   },
   {
     "label": "Filters",
     "desc": "A prefab for creating filter controls that work well with query records.",
-    "icon": "library/prefabs/filters/filters.png",
-    "project": "library/prefabs/filters/filters-0-1.zip",
+    "project": "library/prefabs/filters-0.2.0.zip",
+    "icon": "library/prefabs/filters-0.2.0.png",
     "docs": "/library/prefabs/filters/",
-    "tags": ["UI"]
+    "tags": [
+      "UI",
+      "Data"
+    ],
+    "type": "prefab",
+    "version": "0.2.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
   },
   {
-    "label": "Xano",
-    "desc": "Connects to Xano and handles queries, users and authTokens. Built by @gmaison.",
-    "icon": "library/prefabs/xano/xano-thumb.png",
-    "project": "library/prefabs/xano/xano-prefab-1.zip",
-    "docs": "/library/prefabs/xano/",
-    "tags": ["Data"]
+    "label": "Form",
+    "desc": "Component for creating dynamic forms.",
+    "project": "library/prefabs/form-0.5.0.zip",
+    "icon": "library/prefabs/form-0.5.0.png",
+    "docs": "/library/prefabs/form/",
+    "tags": [
+      "UI",
+      "Form",
+      "Data"
+    ],
+    "type": "prefab",
+    "version": "0.5.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "List With Icons",
+    "desc": "A simple list component with icons and labels.",
+    "project": "library/prefabs/list-with-icons-1.0.0.zip",
+    "icon": "library/prefabs/list-with-icons-1.0.0.png",
+    "docs": "/library/prefabs/list-with-icons/",
+    "tags": [
+      "UI",
+      "Data"
+    ],
+    "type": "prefab",
+    "version": "1.0.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "Loading Spinner",
+    "desc": "A loading spinner that can be shown when requesting data etc.",
+    "project": "library/prefabs/loading-spinner-0.1.0.zip",
+    "icon": "library/prefabs/loading-spinner-0.1.0.png",
+    "docs": "/library/prefabs/loading-spinner/",
+    "tags": [
+      "UI",
+      "Feedback"
+    ],
+    "type": "prefab",
+    "version": "0.1.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "Mail Gun",
+    "desc": "Send emails with Mailgun from a cloud function. Configure by provisioning the backend function secrets MAILGUN_API_KEY and MAILGUN_DOMAIN — see the prefab README.",
+    "project": "library/prefabs/mail-gun-0.3.0.zip",
+    "icon": "library/prefabs/mail-gun-0.3.0.png",
+    "docs": "/library/prefabs/mailgun/",
+    "tags": [
+      "Cloud",
+      "Email"
+    ],
+    "type": "prefab",
+    "version": "0.3.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "Media Query",
+    "desc": "Contains a handy component to create responsive interfaces.",
+    "project": "library/prefabs/media-query-0.2.0.zip",
+    "icon": "library/prefabs/media-query-0.2.0.png",
+    "docs": "/library/prefabs/media-query/",
+    "tags": [
+      "UI",
+      "Utility"
+    ],
+    "type": "prefab",
+    "version": "0.2.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "Multi Choice",
+    "desc": "A component that allows for multi selection in a group of checkboxes.",
+    "project": "library/prefabs/multi-choice-0.6.0.zip",
+    "icon": "library/prefabs/multi-choice-0.6.0.png",
+    "docs": "/library/prefabs/multi-choice/",
+    "tags": [
+      "UI",
+      "Form",
+      "Input"
+    ],
+    "type": "prefab",
+    "version": "0.6.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "Multi Choice with Pills",
+    "desc": "A multi select drop down, showing the selected items as pills.",
+    "project": "library/prefabs/multi-choice-with-pills-0.10.0.zip",
+    "icon": "library/prefabs/multi-choice-with-pills-0.10.0.png",
+    "docs": "/library/prefabs/multi-choice-with-pills/",
+    "tags": [
+      "UI",
+      "Form",
+      "Input"
+    ],
+    "type": "prefab",
+    "version": "0.10.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "Navigation Menu",
+    "desc": "Component for creating navigation menus.",
+    "project": "library/prefabs/navigation-menu-0.1.0.zip",
+    "icon": "library/prefabs/navigation-menu-0.1.0.png",
+    "docs": "/library/prefabs/navigation-menu/",
+    "tags": [
+      "UI",
+      "Navigation"
+    ],
+    "type": "prefab",
+    "version": "0.1.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "OAuth2",
+    "desc": "Cloud functions for oauth2 user authentication.",
+    "project": "library/prefabs/oauth2-0.2.0.zip",
+    "icon": "library/prefabs/oauth2-0.2.0.png",
+    "docs": "/library/prefabs/oauth2/",
+    "tags": [
+      "Cloud",
+      "Auth"
+    ],
+    "type": "prefab",
+    "version": "0.2.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "Pages And Rows",
+    "desc": "A component for pagination, letting user pick page and number of rows per page.",
+    "project": "library/prefabs/pages-and-rows-0.3.0.zip",
+    "icon": "library/prefabs/pages-and-rows-0.3.0.png",
+    "docs": "/library/prefabs/pagesandrows/",
+    "tags": [
+      "UI",
+      "Data"
+    ],
+    "type": "prefab",
+    "version": "0.3.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "Pagination",
+    "desc": "A component for pagination, showing available pages and letting user switch.",
+    "project": "library/prefabs/pagination-0.2.0.zip",
+    "icon": "library/prefabs/pagination-0.2.0.png",
+    "docs": "/library/prefabs/pagination/",
+    "tags": [
+      "UI",
+      "Data"
+    ],
+    "type": "prefab",
+    "version": "0.2.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "Popup Modal",
+    "desc": "Contains a classic popup modal for simple confirm popups.",
+    "project": "library/prefabs/popup-modal-0.2.0.zip",
+    "icon": "library/prefabs/popup-modal-0.2.0.png",
+    "docs": "/library/prefabs/modal/",
+    "tags": [
+      "UI",
+      "Feedback"
+    ],
+    "type": "prefab",
+    "version": "0.2.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "Progress Circle",
+    "desc": "Contains an animating progress visualization in percentage.",
+    "project": "library/prefabs/progress-circle-0.2.0.zip",
+    "icon": "library/prefabs/progress-circle-0.2.0.png",
+    "docs": "/library/prefabs/progress-circle/",
+    "tags": [
+      "UI",
+      "Feedback"
+    ],
+    "type": "prefab",
+    "version": "0.2.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "Rating",
+    "desc": "An interactive star rating component.",
+    "project": "library/prefabs/rating-0.2.0.zip",
+    "icon": "library/prefabs/rating-0.2.0.png",
+    "docs": "/library/prefabs/rating/",
+    "tags": [
+      "UI",
+      "Form",
+      "Input"
+    ],
+    "type": "prefab",
+    "version": "0.2.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "Selection Pills",
+    "desc": "A list of selection pills, select one or many.",
+    "project": "library/prefabs/selection-pills-0.2.0.zip",
+    "icon": "library/prefabs/selection-pills-0.2.0.png",
+    "docs": "/library/prefabs/selection-pills/",
+    "tags": [
+      "UI",
+      "Form",
+      "Input"
+    ],
+    "type": "prefab",
+    "version": "0.2.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "Send Grid",
+    "desc": "Send emails with SendGrid from a cloud function. Configure by provisioning the backend function secret SENDGRID_API_KEY — see the prefab README.",
+    "project": "library/prefabs/send-grid-0.3.0.zip",
+    "icon": "library/prefabs/send-grid-0.3.0.png",
+    "docs": "/library/prefabs/sendgrid/",
+    "tags": [
+      "Cloud",
+      "Email"
+    ],
+    "type": "prefab",
+    "version": "0.3.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "Stripe",
+    "desc": "Cloud functions and UI for Stripe payments and subscriptions — checkout, plan picker, and invoice handling. Configure by provisioning the backend function secrets STRIPE_API_KEY, STRIPE_CHECKOUT_SUCCESS_URL and STRIPE_CHECKOUT_CANCEL_URL — see the prefab README.",
+    "project": "library/prefabs/stripe-0.6.0.zip",
+    "icon": "library/prefabs/stripe-0.6.0.png",
+    "docs": "/library/prefabs/stripe/",
+    "tags": [
+      "Cloud",
+      "UI",
+      "Payments"
+    ],
+    "type": "prefab",
+    "version": "0.6.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
   },
   {
     "label": "Supabase",
     "desc": "Connects to Supabase and handles queries, users and authTokens. Built by @gmaison and @RicoTrevisan.",
-    "icon": "library/prefabs/supabase/thumb.png",
-    "project": "library/prefabs/supabase/supabase-prefab-1.zip",
+    "project": "library/prefabs/supabase-1.1.0.zip",
+    "icon": "library/prefabs/supabase-1.1.0.png",
     "docs": "/library/prefabs/supabase/",
-    "tags": ["Data"]
+    "tags": [
+      "Data",
+      "Auth",
+      "Backend"
+    ],
+    "type": "prefab",
+    "version": "1.1.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "Tab Bar",
+    "desc": "A tab bar component, useful for creating tab navigation.",
+    "project": "library/prefabs/tab-bar-0.2.0.zip",
+    "icon": "library/prefabs/tab-bar-0.2.0.png",
+    "docs": "/library/prefabs/tab-bar/",
+    "tags": [
+      "UI",
+      "Navigation"
+    ],
+    "type": "prefab",
+    "version": "0.2.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "Table",
+    "desc": "Component for creating tables from data.",
+    "project": "library/prefabs/table-0.7.0.zip",
+    "icon": "library/prefabs/table-0.7.0.png",
+    "docs": "/library/prefabs/table/",
+    "tags": [
+      "UI",
+      "Data"
+    ],
+    "type": "prefab",
+    "version": "0.7.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "Tags",
+    "desc": "Display a list of tags, with nice auto generated colors.",
+    "project": "library/prefabs/tags-0.2.0.zip",
+    "icon": "library/prefabs/tags-0.2.0.png",
+    "docs": "/library/prefabs/tags/",
+    "tags": [
+      "UI",
+      "Data"
+    ],
+    "type": "prefab",
+    "version": "0.2.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "Time Picker",
+    "desc": "A time picker input for selecting hours and minutes.",
+    "project": "library/prefabs/time-picker-1.3.0.zip",
+    "icon": "library/prefabs/time-picker-1.3.0.png",
+    "docs": "/library/prefabs/time-picker/",
+    "tags": [
+      "UI",
+      "Form",
+      "Input"
+    ],
+    "type": "prefab",
+    "version": "1.3.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "Toast",
+    "desc": "Contains Toast messages for success, warnings, errors, and neutral.",
+    "project": "library/prefabs/toast-0.2.0.zip",
+    "icon": "library/prefabs/toast-0.2.0.png",
+    "docs": "/library/prefabs/toast/",
+    "tags": [
+      "UI",
+      "Feedback"
+    ],
+    "type": "prefab",
+    "version": "0.2.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "Toggle Switch",
+    "desc": "A toggle switch UI component.",
+    "project": "library/prefabs/toggle-switch-0.1.0.zip",
+    "icon": "library/prefabs/toggle-switch-0.1.0.png",
+    "docs": "/library/prefabs/toggle/",
+    "tags": [
+      "UI",
+      "Form",
+      "Input"
+    ],
+    "type": "prefab",
+    "version": "0.1.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "TOTP",
+    "desc": "Cloud functions for auth with timebased one time passwords like Google Auth.",
+    "project": "library/prefabs/totp-0.2.0.zip",
+    "icon": "library/prefabs/totp-0.2.0.png",
+    "docs": "/library/prefabs/totp/",
+    "tags": [
+      "Cloud",
+      "Auth"
+    ],
+    "type": "prefab",
+    "version": "0.2.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "Xano",
+    "desc": "Connects to Xano and handles queries, users and authTokens. Built by @gmaison.",
+    "project": "library/prefabs/xano-1.0.0.zip",
+    "icon": "library/prefabs/xano-1.0.0.png",
+    "docs": "/library/prefabs/xano/",
+    "tags": [
+      "Data",
+      "Auth",
+      "Backend"
+    ],
+    "type": "prefab",
+    "version": "1.0.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
   }
 ]
