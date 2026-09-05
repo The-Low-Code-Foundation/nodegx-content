@@ -1,19 +1,5 @@
 [
   {
-    "label": "Avatar",
-    "desc": "Registers an Avatar visual node (image, initials or custom content; sizes xsmall to xxlarge; borders, outlines and hover states) plus Avatar Group / Avatar Group Item components for overlapping avatar stacks driven by an Items array. Includes a Sample component demonstrating every variant. No longer bundles a Material Icons icon set — install the standalone Material Icons module if you want glyph avatars.",
-    "project": "library/modules/avatar-1.1.0.zip",
-    "icon": "library/modules/avatar-1.1.0.png",
-    "docs": "/library/modules/avatar/",
-    "tags": [
-      "UI"
-    ],
-    "type": "module",
-    "version": "1.1.0",
-    "minEditorVersion": "0.1.0",
-    "runtimeVersion": "2.7.0"
-  },
-  {
     "label": "Chart.js",
     "desc": "A module with components to build charts.",
     "project": "library/modules/chart-js-1.4.4.zip",
@@ -230,6 +216,20 @@
     "runtimeVersion": "2.7.0"
   },
   {
+    "label": "Keyboard Shortcuts",
+    "desc": "Give your app real keyboard shortcuts. Ships one Keyboard Shortcut node — write the combination on a port (\"mod+k\", \"shift+?\", \"escape\") and wire the Pressed signal wherever you like. \"mod\" is Command on macOS and Control everywhere else; \"cmd\" and \"ctrl\" mean exactly those keys. The listener is registered on mount and removed on unmount, so a shortcut never survives navigating away and fires twice. Shortcuts stay quiet while you are typing in a text field — except Escape and Cmd/Ctrl/Alt chords, which always get through. No dependencies, no network.",
+    "project": "library/modules/keyboard-shortcuts-1.0.0.zip",
+    "icon": "library/modules/keyboard-shortcuts-1.0.0.png",
+    "docs": "/library/modules/keyboard-shortcuts/",
+    "tags": [
+      "Utility"
+    ],
+    "type": "module",
+    "version": "1.0.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
     "label": "Lottie",
     "desc": "A module for using Lottie animations in Noodl.",
     "project": "library/modules/lottie-1.0.2.zip",
@@ -332,17 +332,27 @@
   },
   {
     "label": "PDF Viewer",
-    "desc": "A /PDF Viewer component that renders a PDF from a URL (PDF URL, Width and Height inputs) via Google's document viewer in an iframe. REQUIRES the standalone Custom HTML module — install that first; this entry no longer bundles its own copy of it. See the entry README.",
-    "project": "library/modules/pdf-viewer-1.1.0.zip",
-    "icon": "library/modules/pdf-viewer-1.1.0.png",
+    "desc": "A /PDF Viewer component that renders a PDF from a URL (PDF URL, Width and Height inputs) via Google's document viewer in an iframe. Installs the Custom HTML module alongside it, which is where the Custom HTML node it is built on comes from.",
+    "project": "library/modules/pdf-viewer-1.2.0.zip",
+    "icon": "library/modules/pdf-viewer-1.2.0.png",
     "docs": "/library/modules/pdf-viewer/",
     "tags": [
       "UI"
     ],
     "type": "module",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "minEditorVersion": "0.1.0",
-    "runtimeVersion": "2.7.0"
+    "runtimeVersion": "2.7.0",
+    "dependencies": [
+      {
+        "key": "modules/custom-html",
+        "label": "Custom HTML",
+        "type": "module",
+        "project": "library/modules/custom-html-1.0.2.zip",
+        "version": "1.0.2",
+        "minEditorVersion": "0.1.0"
+      }
+    ]
   },
   {
     "label": "QR Code",

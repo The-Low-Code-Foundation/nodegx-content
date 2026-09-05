@@ -1,9 +1,24 @@
 [
   {
+    "label": "Accordion",
+    "desc": "A list of sections that open and close, one click each. Each section owns its own state, so opening one never closes another, and the chevron swaps glyph rather than rotating so it reads correctly with animation off. The whole header row is the hit area, not just the words. Out of the box it renders three sample sections from a Static Data node; connect your own array (Title/Body per item, optional Start Open) to Items and it wins over the samples.",
+    "project": "library/prefabs/accordion-1.0.0.zip",
+    "icon": "library/prefabs/accordion-1.0.0.png",
+    "docs": "/library/prefabs/accordion/",
+    "tags": [
+      "UI",
+      "Layout"
+    ],
+    "type": "prefab",
+    "version": "1.0.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
     "label": "App Shell",
     "desc": "The frame an app lives inside: a sidebar (app name slot + data-driven nav items with active-route highlighting), a top bar (page title, actions slot, user area placeholder), and a content outlet where your Page Router goes. Nav items are a plain array (Label/Icon/Target) fed from a Static Data node or the Nav Items input; clicking one navigates to its Target and emits Nav Click/Nav Target. Below the Collapse Below breakpoint (default 768px) the sidebar collapses behind a hamburger button.",
-    "project": "library/prefabs/app-shell-1.0.0.zip",
-    "icon": "library/prefabs/app-shell-1.0.0.png",
+    "project": "library/prefabs/app-shell-1.1.0.zip",
+    "icon": "library/prefabs/app-shell-1.1.0.png",
     "docs": "/library/prefabs/app-shell/",
     "tags": [
       "UI",
@@ -11,7 +26,7 @@
       "Navigation"
     ],
     "type": "prefab",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
@@ -32,10 +47,25 @@
     "runtimeVersion": "2.7.0"
   },
   {
+    "label": "Avatar",
+    "desc": "A round avatar that shows a photo when it has one and the person's initials when it does not — sized by a single Size input, and ringed so a stack of them stays legible against any background. Avatar Group overlaps them the way you expect and collapses the tail into a \"+3\" badge once Max is set. Out of the box the group renders five sample people from a Static Data node; connect your own array (Name/Image per item) to Items and it wins over the samples.",
+    "project": "library/prefabs/avatar-2.0.0.zip",
+    "icon": "library/prefabs/avatar-2.0.0.png",
+    "docs": "/library/prefabs/avatar/",
+    "tags": [
+      "UI",
+      "Data"
+    ],
+    "type": "prefab",
+    "version": "2.0.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
     "label": "Card & Card Grid",
     "desc": "A styled Card (optional media area on top, title, body text, footer/actions strip, Clicked signal, hover affordance) plus a responsive Card Grid that repeats it over any data array. The grid packs as many 240px-minimum columns as fit and degrades to a single full-width column when narrow. Out of the box it renders six sample cards from a Static Data node; connect your own array (Title/Body/Image/Footer per item) to the Items input and it wins over the samples. The grid forwards each card's click as Card Clicked with Clicked Title and Clicked Item Id.",
-    "project": "library/prefabs/card-grid-1.0.0.zip",
-    "icon": "library/prefabs/card-grid-1.0.0.png",
+    "project": "library/prefabs/card-grid-1.1.0.zip",
+    "icon": "library/prefabs/card-grid-1.1.0.png",
     "docs": "/library/prefabs/card-grid/",
     "tags": [
       "UI",
@@ -43,7 +73,7 @@
       "Data"
     ],
     "type": "prefab",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
@@ -79,8 +109,8 @@
   {
     "label": "Date Picker",
     "desc": "A date picker input with a pop-up calendar for selecting a date.",
-    "project": "library/prefabs/date-picker-1.4.0.zip",
-    "icon": "library/prefabs/date-picker-1.4.0.png",
+    "project": "library/prefabs/date-picker-1.6.1.zip",
+    "icon": "library/prefabs/date-picker-1.6.1.png",
     "docs": "/library/prefabs/date-picker/",
     "tags": [
       "UI",
@@ -88,7 +118,7 @@
       "Input"
     ],
     "type": "prefab",
-    "version": "1.4.0",
+    "version": "1.6.1",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
@@ -109,25 +139,41 @@
     "runtimeVersion": "2.7.0"
   },
   {
+    "label": "File Upload",
+    "desc": "A drop zone that walks a file all the way to storage: Open File Picker chooses it, Upload File sends it, Cloud File reads back the URL you can actually link to. It shows what it is the moment you place it — a dashed zone stating the file types and the size limit it will accept — and then owns the whole sequence, with a thumbnail of the file being sent, a real progress bar driven by the transfer's own byte counts, and an error panel that prints the reason rather than going quiet. The size limit is checked in the browser, so the one failure that does not need a server does not wait for one. Publishes Uploaded, the stored Cloud File, its URL and File Name, and a Failed signal with an Error string.",
+    "project": "library/prefabs/file-upload-1.0.0.zip",
+    "icon": "library/prefabs/file-upload-1.0.0.png",
+    "docs": "/library/prefabs/file-upload/",
+    "tags": [
+      "UI",
+      "Data",
+      "Form"
+    ],
+    "type": "prefab",
+    "version": "1.0.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
     "label": "Filters",
     "desc": "A prefab for creating filter controls that work well with query records.",
-    "project": "library/prefabs/filters-0.2.0.zip",
-    "icon": "library/prefabs/filters-0.2.0.png",
+    "project": "library/prefabs/filters-0.4.1.zip",
+    "icon": "library/prefabs/filters-0.4.1.png",
     "docs": "/library/prefabs/filters/",
     "tags": [
       "UI",
       "Data"
     ],
     "type": "prefab",
-    "version": "0.2.0",
+    "version": "0.4.1",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
   {
     "label": "Form",
-    "desc": "Component for creating dynamic forms.",
-    "project": "library/prefabs/form-0.5.0.zip",
-    "icon": "library/prefabs/form-0.5.0.png",
+    "desc": "A data-driven form: hand it an array of field descriptors and it builds Text Input, Text Area, Drop Down, Checkbox, Single Choice, Multi Choice, Slider and Date Input controls, collects the values into one object, shows per-field errors and reports a valid Submit. Out of the box it renders five sample fields from a Static Data node; connect your own array to the Controls input and it wins over the samples.",
+    "project": "library/prefabs/form-0.10.0.zip",
+    "icon": "library/prefabs/form-0.10.0.png",
     "docs": "/library/prefabs/form/",
     "tags": [
       "UI",
@@ -135,7 +181,7 @@
       "Data"
     ],
     "type": "prefab",
-    "version": "0.5.0",
+    "version": "0.10.0",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
@@ -157,30 +203,30 @@
   {
     "label": "Image Cropper",
     "desc": "Image Cropper Module. Mainly intended for cropping profile pictures.",
-    "project": "library/prefabs/image-cropper-1.6.0.zip",
-    "icon": "library/prefabs/image-cropper-1.6.0.png",
+    "project": "library/prefabs/image-cropper-1.7.1.zip",
+    "icon": "library/prefabs/image-cropper-1.7.1.png",
     "docs": "/library/modules/image-cropper/",
     "tags": [
       "UI",
       "Utility"
     ],
     "type": "prefab",
-    "version": "1.6.0",
+    "version": "1.7.1",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
   {
     "label": "List With Icons",
     "desc": "A simple list component with icons and labels.",
-    "project": "library/prefabs/list-with-icons-1.0.0.zip",
-    "icon": "library/prefabs/list-with-icons-1.0.0.png",
+    "project": "library/prefabs/list-with-icons-1.1.0.zip",
+    "icon": "library/prefabs/list-with-icons-1.1.0.png",
     "docs": "/library/prefabs/list-with-icons/",
     "tags": [
       "UI",
       "Data"
     ],
     "type": "prefab",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
@@ -202,23 +248,23 @@
   {
     "label": "Media Query",
     "desc": "Contains a handy component to create responsive interfaces.",
-    "project": "library/prefabs/media-query-0.2.0.zip",
-    "icon": "library/prefabs/media-query-0.2.0.png",
+    "project": "library/prefabs/media-query-0.3.0.zip",
+    "icon": "library/prefabs/media-query-0.3.0.png",
     "docs": "/library/prefabs/media-query/",
     "tags": [
       "UI",
       "Utility"
     ],
     "type": "prefab",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
   {
     "label": "Multi Select",
     "desc": "Multi-select input in three display variants, each a drop-in component: List (checkbox group), Pills (toggleable pill buttons), and Dropdown (a drop-down whose selected items show as removable pills). All three are data-driven — feed an Options array (plus optional Labels and an initial Selection) and read the result from the Selected Items output and the Changed signal.",
-    "project": "library/prefabs/multi-select-1.0.0.zip",
-    "icon": "library/prefabs/multi-select-1.0.0.png",
+    "project": "library/prefabs/multi-select-1.2.1.zip",
+    "icon": "library/prefabs/multi-select-1.2.1.png",
     "docs": "/library/prefabs/multi-select/",
     "tags": [
       "UI",
@@ -226,22 +272,22 @@
       "Input"
     ],
     "type": "prefab",
-    "version": "1.0.0",
+    "version": "1.2.1",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
   {
     "label": "Navigation Menu",
     "desc": "Component for creating navigation menus.",
-    "project": "library/prefabs/navigation-menu-0.1.0.zip",
-    "icon": "library/prefabs/navigation-menu-0.1.0.png",
+    "project": "library/prefabs/navigation-menu-0.2.0.zip",
+    "icon": "library/prefabs/navigation-menu-0.2.0.png",
     "docs": "/library/prefabs/navigation-menu/",
     "tags": [
       "UI",
       "Navigation"
     ],
     "type": "prefab",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
@@ -278,30 +324,30 @@
   {
     "label": "Pagination",
     "desc": "Full pagination control: page numbers with ellipsis overflow, prev/next buttons, an optional rows-per-page selector and an optional \"Showing X–Y of Z\" summary. Inputs: Total Items, Items Per Page, Current Page. Outputs: Current Page, Offset (plugs into Query Records' Skip), Items Per Page (plugs into Limit) and a Changed signal. Merges the former Pages And Rows prefab.",
-    "project": "library/prefabs/pagination-2.0.0.zip",
-    "icon": "library/prefabs/pagination-2.0.0.png",
+    "project": "library/prefabs/pagination-2.1.0.zip",
+    "icon": "library/prefabs/pagination-2.1.0.png",
     "docs": "/library/prefabs/pagination/",
     "tags": [
       "UI",
       "Data"
     ],
     "type": "prefab",
-    "version": "2.0.0",
+    "version": "2.1.0",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
   {
     "label": "Panning and Zooming Control",
     "desc": "A control that implements a pan and zoom view on large images.",
-    "project": "library/prefabs/panning-and-zooming-control-1.2.0.zip",
-    "icon": "library/prefabs/panning-and-zooming-control-1.2.0.png",
+    "project": "library/prefabs/panning-and-zooming-control-1.3.1.zip",
+    "icon": "library/prefabs/panning-and-zooming-control-1.3.1.png",
     "docs": "/library/modules/panning-and-zooming/",
     "tags": [
       "UI",
       "Utility"
     ],
     "type": "prefab",
-    "version": "1.2.0",
+    "version": "1.3.1",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
@@ -323,8 +369,8 @@
   {
     "label": "Rating",
     "desc": "An interactive star rating component.",
-    "project": "library/prefabs/rating-0.2.0.zip",
-    "icon": "library/prefabs/rating-0.2.0.png",
+    "project": "library/prefabs/rating-0.3.0.zip",
+    "icon": "library/prefabs/rating-0.3.0.png",
     "docs": "/library/prefabs/rating/",
     "tags": [
       "UI",
@@ -332,7 +378,23 @@
       "Input"
     ],
     "type": "prefab",
-    "version": "0.2.0",
+    "version": "0.3.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "Search Bar",
+    "desc": "A search field that tells you what was typed once the typing stops: textChanged restarts a Timer, the Timer runs the emit, and Enter skips the wait. Query and Changed fire on the debounce, not per keystroke, so you can wire Changed straight at a Query Records without hammering it. The clear button appears only while there is something to clear, and Result Count renders as \"1 result\" / \"1,204 results\" beside the field.",
+    "project": "library/prefabs/search-bar-1.0.0.zip",
+    "icon": "library/prefabs/search-bar-1.0.0.png",
+    "docs": "/library/prefabs/search-bar/",
+    "tags": [
+      "UI",
+      "Form",
+      "Data"
+    ],
+    "type": "prefab",
+    "version": "1.0.0",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
@@ -348,6 +410,22 @@
     ],
     "type": "prefab",
     "version": "0.3.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "Settings Page",
+    "desc": "A sectioned settings form that knows what you have changed. Profile, Notifications and Appearance sections built from labelled text, dropdown and checkbox fields in the same style as Form Fields, plus a save bar that is not there at all until a field actually differs from the value it loaded with — then it names the count (\"2 unsaved changes\") and offers Save and Discard. Discard puts every field back; Save re-baselines, so the values you just saved become the new \"unchanged\". Out of the box it loads a realistic sample record from a Static Data node; connect your own object to Settings and it wins. Publishes Values, Is Dirty and Change Count, and fires Saved / Discarded.",
+    "project": "library/prefabs/settings-page-1.1.0.zip",
+    "icon": "library/prefabs/settings-page-1.1.0.png",
+    "docs": "/library/prefabs/settings-page/",
+    "tags": [
+      "UI",
+      "Form",
+      "Layout"
+    ],
+    "type": "prefab",
+    "version": "1.1.0",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
@@ -380,10 +458,26 @@
     "minEditorVersion": "0.1.0"
   },
   {
+    "label": "Stepper",
+    "desc": "A numbered progress rail with Back/Next and a Finish on the last step. It publishes Current Step and a Completed signal and deliberately does not hold your content: you mount each step's Group against Current Step, so a step is an ordinary part of your page rather than something trapped inside a container. Steps behind the current one collapse to a tick. Out of the box it renders four sample steps; connect your own array (Title per item) to Steps and it wins over the samples. Pairs with Form Fields, one fieldset per step.",
+    "project": "library/prefabs/stepper-1.0.0.zip",
+    "icon": "library/prefabs/stepper-1.0.0.png",
+    "docs": "/library/prefabs/stepper/",
+    "tags": [
+      "UI",
+      "Form",
+      "Layout"
+    ],
+    "type": "prefab",
+    "version": "1.0.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
     "label": "Stripe",
     "desc": "Cloud functions and UI for Stripe payments and subscriptions — checkout, plan picker, and invoice handling. Configure by provisioning the backend function secrets STRIPE_API_KEY, STRIPE_CHECKOUT_SUCCESS_URL and STRIPE_CHECKOUT_CANCEL_URL — see the prefab README.",
-    "project": "library/prefabs/stripe-0.6.0.zip",
-    "icon": "library/prefabs/stripe-0.6.0.png",
+    "project": "library/prefabs/stripe-0.8.1.zip",
+    "icon": "library/prefabs/stripe-0.8.1.png",
     "docs": "/library/prefabs/stripe/",
     "tags": [
       "Cloud",
@@ -391,7 +485,7 @@
       "Payments"
     ],
     "type": "prefab",
-    "version": "0.6.0",
+    "version": "0.8.1",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
@@ -414,53 +508,53 @@
   {
     "label": "Tab Bar",
     "desc": "A tab bar component, useful for creating tab navigation.",
-    "project": "library/prefabs/tab-bar-0.2.0.zip",
-    "icon": "library/prefabs/tab-bar-0.2.0.png",
+    "project": "library/prefabs/tab-bar-0.3.1.zip",
+    "icon": "library/prefabs/tab-bar-0.3.1.png",
     "docs": "/library/prefabs/tab-bar/",
     "tags": [
       "UI",
       "Navigation"
     ],
     "type": "prefab",
-    "version": "0.2.0",
+    "version": "0.3.1",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
   {
     "label": "Table",
-    "desc": "Component for creating tables from data.",
-    "project": "library/prefabs/table-0.7.0.zip",
-    "icon": "library/prefabs/table-0.7.0.png",
+    "desc": "A table built from data: columns are derived from your rows (or declared with a Headers array), each cell picks its own String/Number/Boolean/Date/Image renderer from the value's type, headers sort and cells can be made editable. Out of the box it renders five sample rows from a Static Data node; connect your own array to the Items input and it wins over the samples.",
+    "project": "library/prefabs/table-0.10.2.zip",
+    "icon": "library/prefabs/table-0.10.2.png",
     "docs": "/library/prefabs/table/",
     "tags": [
       "UI",
       "Data"
     ],
     "type": "prefab",
-    "version": "0.7.0",
+    "version": "0.10.2",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
   {
     "label": "Tags",
-    "desc": "Display a list of tags, with nice auto generated colors.",
-    "project": "library/prefabs/tags-0.2.0.zip",
-    "icon": "library/prefabs/tags-0.2.0.png",
+    "desc": "A wrapping row of tag pills, optionally removable and clickable, with colours generated from each tag's own text so the same label is always the same colour. Out of the box it renders six sample tags from a Static Data node; connect your own array of { Label } to the Items input and it wins over the samples.",
+    "project": "library/prefabs/tags-0.5.0.zip",
+    "icon": "library/prefabs/tags-0.5.0.png",
     "docs": "/library/prefabs/tags/",
     "tags": [
       "UI",
       "Data"
     ],
     "type": "prefab",
-    "version": "0.2.0",
+    "version": "0.5.0",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
   {
     "label": "Time Picker",
     "desc": "A time picker input for selecting hours and minutes.",
-    "project": "library/prefabs/time-picker-1.3.0.zip",
-    "icon": "library/prefabs/time-picker-1.3.0.png",
+    "project": "library/prefabs/time-picker-1.5.1.zip",
+    "icon": "library/prefabs/time-picker-1.5.1.png",
     "docs": "/library/prefabs/time-picker/",
     "tags": [
       "UI",
@@ -468,30 +562,30 @@
       "Input"
     ],
     "type": "prefab",
-    "version": "1.3.0",
+    "version": "1.5.1",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
   {
     "label": "Toast",
     "desc": "Contains Toast messages for success, warnings, errors, and neutral.",
-    "project": "library/prefabs/toast-0.2.0.zip",
-    "icon": "library/prefabs/toast-0.2.0.png",
+    "project": "library/prefabs/toast-0.3.1.zip",
+    "icon": "library/prefabs/toast-0.3.1.png",
     "docs": "/library/prefabs/toast/",
     "tags": [
       "UI",
       "Feedback"
     ],
     "type": "prefab",
-    "version": "0.2.0",
+    "version": "0.3.1",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
   {
     "label": "Toggle Switch",
     "desc": "A toggle switch UI component.",
-    "project": "library/prefabs/toggle-switch-0.1.0.zip",
-    "icon": "library/prefabs/toggle-switch-0.1.0.png",
+    "project": "library/prefabs/toggle-switch-0.2.1.zip",
+    "icon": "library/prefabs/toggle-switch-0.2.1.png",
     "docs": "/library/prefabs/toggle/",
     "tags": [
       "UI",
@@ -499,22 +593,38 @@
       "Input"
     ],
     "type": "prefab",
-    "version": "0.1.0",
+    "version": "0.2.1",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
   {
     "label": "TOTP",
     "desc": "Cloud functions for auth with timebased one time passwords like Google Auth.",
-    "project": "library/prefabs/totp-0.2.0.zip",
-    "icon": "library/prefabs/totp-0.2.0.png",
+    "project": "library/prefabs/totp-0.2.1.zip",
+    "icon": "library/prefabs/totp-0.2.1.png",
     "docs": "/library/prefabs/totp/",
     "tags": [
       "Cloud",
       "Auth"
     ],
     "type": "prefab",
-    "version": "0.2.0",
+    "version": "0.2.1",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "User Menu",
+    "desc": "The avatar button that lives in the top-right of an app: a person's picture (or their initials when there is no picture), their name and email, and a dropdown holding account items and a Sign Out. Click it to open, click anywhere else to close. Out of the box it renders a sample person and four sample items from Static Data nodes; connect Name/Email/Avatar and an Items array and they win over the samples. Publishes Item Clicked with Clicked Label and Clicked Item Id, and a Sign Out signal to wire at the Log Out node beside Auth Pages.",
+    "project": "library/prefabs/user-menu-1.0.0.zip",
+    "icon": "library/prefabs/user-menu-1.0.0.png",
+    "docs": "/library/prefabs/user-menu/",
+    "tags": [
+      "UI",
+      "Auth",
+      "Navigation"
+    ],
+    "type": "prefab",
+    "version": "1.0.0",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
