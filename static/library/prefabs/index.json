@@ -45,6 +45,19 @@
     "runtimeVersion": "2.7.0"
   },
   {
+    "label": "Ask a Local Model",
+    "desc": "Ask a model running on this computer (Ollama, llama.cpp, LM Studio) a fixed question whose blank is filled from a list, and get back one answer from a list. No key, nothing leaves the machine; a missing or slow model fires Failure and the app carries on.",
+    "project": "library/prefabs/ask-a-local-model-1.0.0.zip",
+    "icon": "library/prefabs/ask-a-local-model-1.0.0.png",
+    "docs": "/library/prefabs/ask-a-local-model/",
+    "tags": [
+      "Cloud",
+      "AI"
+    ],
+    "type": "prefab",
+    "version": "1.0.0"
+  },
+  {
     "label": "Auth Pages",
     "desc": "Complete sign-in flow behind a Page Router: Sign In, Sign Up, Forgot Password and Reset Password pages built on the built-in Log In, Sign Up, Request Password Reset and Reset Password nodes. Labelled email/password inputs, inline error text from each node's Error output, loading state on every submit button, and links between the pages. Fires an \"Auth Success\" event when a user signs in or signs up.",
     "project": "library/prefabs/auth-pages-1.0.0.zip",

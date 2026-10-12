@@ -1,5 +1,19 @@
 [
   {
+    "label": "Bot Garden Fonts",
+    "desc": "Fredoka, the rounded title and button face of Olive’s Island (the bot-garden template), bundled so an app renders it offline and never asks fonts.googleapis.com. A variable font, latin and latin-extended subsets (French needs the extended œ), loaded by a stylesheet the module injects; use it as font-family: \"Fredoka\". SIL Open Font License 1.1 — the licence travels with it. No nodes, no code.",
+    "project": "library/modules/bot-garden-fonts-1.0.0.zip",
+    "icon": "library/modules/bot-garden-fonts-1.0.0.png",
+    "docs": "/library/modules/bot-garden-fonts/",
+    "tags": [
+      "UI"
+    ],
+    "type": "module",
+    "version": "1.0.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
     "label": "Chart.js",
     "desc": "A module with components to build charts.",
     "project": "library/modules/chart-js-1.4.4.zip",
@@ -172,6 +186,36 @@
     "runtimeVersion": "2.7.0"
   },
   {
+    "label": "Garden 3D Kit",
+    "desc": "One node for Olive’s Island (the bot-garden template): Garden 3D, the same ports as Garden Kit’s Garden (Map, Things, Robots, Bubble, Step Ms, Celebrate, Label; Tile X, Tile Y, Tile Tapped, Ready) drawn as a little flat-shaded island in three.js — tile boxes with a height per kind, cone-on-cylinder trees, icosahedron rocks, a box-and-prism house, stem-and-bulb tulips, robots as a box body with a visor, eyes and a hat — that pans with one finger, zooms with a pinch or a wheel, and reports the tapped tile. Plus Camera (plot, island, follow), Focus, Frame Ms (a rolling p95) and Supported (WebGL2 present), so a page can fall back to the flat Garden. three.js 0.158.0 is vendored beside the node (MIT). The kit draws; the engine decides. It needs Garden Kit in the same project, because it draws with Garden Kit’s world helpers. Without Garden Kit the node does not load.",
+    "project": "library/modules/garden-3d-kit-1.0.0.zip",
+    "icon": "library/modules/garden-3d-kit-1.0.0.png",
+    "docs": "/library/modules/garden-3d-kit/",
+    "tags": [
+      "UI",
+      "Utility"
+    ],
+    "type": "module",
+    "version": "1.0.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
+    "label": "Garden Kit",
+    "desc": "The nodes of Olive’s Island (the bot-garden template), no backend and no network: Block List (a nested, draggable block program a child edits with a finger, a pen or a mouse — tap a palette block to add, drag to move, tap the cross to remove, minus and plus on a repeat's count, a picker of garden words on an ask block; emits the program as JSON on every edit and glows the block the graph names) and Garden (a tile world from rows of characters and a legend, tulips dry or watered, puddles, letters, bowls, stones, eggs, food, a flag, a post box tile, and one or two robots that glide, turn, bump and speak; every sprite inline SVG), Blocks (the program on Blockly) and Divider (a column divider a person drags; it sets a CSS width on the grid and keeps it on this computer). The kit draws; the engine decides.",
+    "project": "library/modules/garden-kit-1.0.0.zip",
+    "icon": "library/modules/garden-kit-1.0.0.png",
+    "docs": "/library/modules/garden-kit/",
+    "tags": [
+      "UI",
+      "Utility"
+    ],
+    "type": "module",
+    "version": "1.0.0",
+    "minEditorVersion": "0.1.0",
+    "runtimeVersion": "2.7.0"
+  },
+  {
     "label": "Geospatial Analysis",
     "desc": "A module for using Turf.js to making it easy to working with GeoJSON.",
     "project": "library/modules/geospatial-analysis-1.0.1.zip",
@@ -203,15 +247,15 @@
   {
     "label": "i18next Translation",
     "desc": "A module for using i18next in Noodl.",
-    "project": "library/modules/i18next-translation-1.0.4.zip",
-    "icon": "library/modules/i18next-translation-1.0.4.png",
+    "project": "library/modules/i18next-translation-1.1.0.zip",
+    "icon": "library/modules/i18next-translation-1.1.0.png",
     "docs": "/library/modules/i18next/",
     "tags": [
       "Data",
       "Utility"
     ],
     "type": "module",
-    "version": "1.0.4",
+    "version": "1.1.0",
     "minEditorVersion": "0.1.0",
     "runtimeVersion": "2.7.0"
   },
